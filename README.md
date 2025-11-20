@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Tasks - Todo App | Antigravity
 
-## Getting Started
+A modern, feature-rich Todo List application built with Next.js 16, featuring dark mode, smooth animations, and a beautiful LiquidEther background.
 
-First, run the development server:
+![Todo App Demo](docs/images/app-screenshot.png)
+
+## ✨ Features
+
+### Core Functionality
+
+- ✅ **Add Todo**: Create tasks using the input field and "Add Task" button or Enter key
+- ✅ **Toggle Complete**: Mark tasks as done with checkbox (auto-moves to bottom!)
+- ✅ **Edit Tasks**: Modify todo content inline with edit button
+- ✅ **Delete Tasks**: Remove todos with confirmation dialog
+- ✅ **Auto-Sort**: Uncompleted tasks stay on top, completed at bottom
+- ✅ **Timestamps**: Creation date/time displayed in Indonesian format
+
+### UI/UX Highlights
+
+- 🌙 **Dark Mode**: Beautiful dark theme by default
+- ✨ **Smooth Animations**: Framer Motion for all interactions
+- 🎨 **LiquidEther Background**: Animated fluid background
+- 💎 **Glassmorphism**: Semi-transparent cards with backdrop blur
+- 🔄 **Smart Sorting**: Completed todos automatically slide to bottom
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Components**: shadcn/ui + Tailwind CSS v4
+- **Database**: SQLite with Prisma 7
+- **Animations**: Framer Motion
+- **Styling**: Dark mode + Glassmorphism effects
+
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Setup database
+npx prisma migrate dev --name init
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit **http://localhost:3000** (or port shown in terminal)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── actions.ts       # Server actions (CRUD)
+│   ├── layout.tsx       # Root layout (dark mode)
+│   └── page.tsx         # Main todo page
+├── components/
+│   ├── todo-item.tsx    # Animated todo item
+│   ├── LiquidEther.tsx  # Background animation
+│   └── ui/              # shadcn/ui components
+prisma/
+└── schema.prisma        # Database schema
+```
 
-## Learn More
+## 🎨 Key Features Explained
 
-To learn more about Next.js, take a look at the following resources:
+### Auto-Sorting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+When you check a todo, it smoothly animates to the bottom of the list. Uncompleted todos always stay on top, sorted by creation date.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Smooth Animations
 
-## Deploy on Vercel
+- **Initial**: Todos fade in and slide from top
+- **Reorder**: 300ms smooth transition when moving
+- **Complete**: Slides to bottom with ease-in-out
+- **Delete**: Fades out and slides left
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dark Mode Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Custom dark color scheme
+- Glassmorphism effects (semi-transparent backgrounds)
+- Optimized contrast for readability
+- Purple/pink gradient background
+
+## 🔧 Development
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+### Database Commands
+
+```bash
+# Generate Prisma Client
+npx prisma generate
+
+# View database in Prisma Studio
+npx prisma studio
+```
+
+## 📸 Screenshots
+
+### Dark Mode Interface
+
+![Dark mode with animations](docs/images/demo.webp)
+
+## ✅ Tested & Verified
+
+- ✅ Build passes (`npm run build`)
+- ✅ All CRUD operations working
+- ✅ Animations smooth and performant
+- ✅ No console errors or warnings
+- ✅ TypeScript types correct
+- ✅ Clean, maintainable code
+
+---
+
+**Using Next.js, shadcn/ui, and Framer Motion**
