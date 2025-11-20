@@ -1,4 +1,4 @@
-# My Tasks - Todo App | Antigravity
+# Todo App | Antigravity
 
 A modern, feature-rich Todo List application built with Next.js 16, featuring dark mode, smooth animations, and a beautiful LiquidEther background.
 
@@ -8,22 +8,22 @@ A modern, feature-rich Todo List application built with Next.js 16, featuring da
 
 ### Core Functionality
 
-- ✅ **Add Todo**: Create tasks using the input field and "Add Task" button or Enter key
-- ✅ **Toggle Complete**: Mark tasks as done with checkbox (auto-moves to bottom!)
-- ✅ **Edit Tasks**: Modify todo content inline with edit button
-- ✅ **Delete Tasks**: Remove todos with confirmation dialog
-- ✅ **Auto-Sort**: Uncompleted tasks stay on top, completed at bottom
-- ✅ **Timestamps**: Creation date/time displayed in Indonesian format
+- **Add Todo**: Create tasks using the input field and "Add Task" button or Enter key
+- **Toggle Complete**: Mark tasks as done with checkbox (auto-moves to bottom!)
+- **Edit Tasks**: Modify todo content inline with edit button
+- **Delete Tasks**: Remove todos with confirmation dialog
+- **Auto-Sort**: Uncompleted tasks stay on top, completed at bottom
+- **Timestamps**: Creation date/time displayed in Indonesian format
 
 ### UI/UX Highlights
 
-- 🌙 **Dark Mode**: Beautiful dark theme by default
-- ✨ **Smooth Animations**: Framer Motion for all interactions
-- 🎨 **LiquidEther Background**: Animated fluid background
-- 💎 **Glassmorphism**: Semi-transparent cards with backdrop blur
-- 🔄 **Smart Sorting**: Completed todos automatically slide to bottom
+- **Dark Mode**: Beautiful dark theme by default
+- **Smooth Animations**: Framer Motion for all interactions
+- **LiquidEther Background**: Animated fluid background
+- **Glassmorphism**: Semi-transparent cards with backdrop blur
+- **Smart Sorting**: Completed todos automatically slide to bottom
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
 - **UI Components**: shadcn/ui + Tailwind CSS v4
@@ -31,7 +31,7 @@ A modern, feature-rich Todo List application built with Next.js 16, featuring da
 - **Animations**: Framer Motion
 - **Styling**: Dark mode + Glassmorphism effects
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ npm run dev
 
 Visit **http://localhost:3000** (or port shown in terminal)
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,7 +62,7 @@ prisma/
 └── schema.prisma        # Database schema
 ```
 
-## 🎨 Key Features Explained
+## Key Features Explained
 
 ### Auto-Sorting
 
@@ -82,7 +82,7 @@ When you check a todo, it smoothly animates to the bottom of the list. Uncomplet
 - Optimized contrast for readability
 - Purple/pink gradient background
 
-## 🔧 Development
+## Development
 
 ### Build for Production
 
@@ -101,20 +101,11 @@ npx prisma generate
 npx prisma studio
 ```
 
-## 📸 Screenshots
+## Screenshots
 
-### Dark Mode Interface
+### Interface
 
 ![Dark mode with animations](docs/images/demo.webp)
-
-## ✅ Tested & Verified
-
-- ✅ Build passes (`npm run build`)
-- ✅ All CRUD operations working
-- ✅ Animations smooth and performant
-- ✅ No console errors or warnings
-- ✅ TypeScript types correct
-- ✅ Clean, maintainable code
 
 ---
 
